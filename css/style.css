@@ -1,0 +1,122 @@
+body {
+  font-family: sans-serif;
+  background: linear-gradient(to bottom, #ffdce0, #fff);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  color: #e91e63;
+}
+
+.memory {
+  background: white;
+  padding: 1.5rem;
+  margin: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 600px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+.gallery {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.gallery h2 {
+  color: #e91e63;
+  margin-bottom: 1.5rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+.love-notes {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.love-notes h2 {
+  color: #d81b60;
+  margin-bottom: 1.5rem;
+}
+
+.note {
+  background: #fff0f5;
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.note h3 {
+  color: #c2185b;
+  margin-bottom: 0.5rem;
+}
+
+.note p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.time-together {
+  background: #ffe6f0;
+  padding: 2rem 1rem;
+  border-radius: 16px;
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.time-together h2 {
+  color: #ec407a;
+  margin-bottom: 1rem;
+}
+
+#time-elapsed {
+  font-size: 1.25rem;
+  color: #333;
+  font-weight: bold;
+}
